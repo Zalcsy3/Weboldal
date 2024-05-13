@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Webtech</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="menu">
+        <img class="foto1" src="logo_praktika.png" alt="foto1">
+        <ul class="listaMenu">
+          <li class="menu_link"><a href="index.html">Főoldal</a></li>
+          <li class="menu_link"><a href="#elerhetosegid">Elérhetőség</a></li>
+          <li class="menu_link"><a href="index2.html" >Galéria</a></li>
+          <li class="menu_link"><a href="#rolunkid">Rólunk</a></li>
+          <li class="menu_link"><a href="index3.html" class="activeLink">Csapat</a></li>
+        </ul>
+
+        <div class="mediaMenu">
+          <ul class="mediaMenulist">
+            <li class="medialist"><a href="index.html">Főoldal</a></li>
+            <li class="medialist"><a href="#elerhetosegid">Elérhetőség</a></li>
+            <li class="medialist"><a href="index2.html" >Galéria</a></li>
+            <li class="medialist"><a href="#rolunkid">Rólunk</a></li>
+            <li class="medialist"><a href="index3.html" class="activeLink2">Csapat</a></li>
+          </ul>
+        </div>
+        <div class="btnBar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+    </div>
+    
+    
+
+
+    <footer>
+
+      <div class="fotoFooter">
+        <img class="fotoF" src="logo_praktika.png" alt="foto1">
+      </div>
+
+      <div class="footerTartalom">
+        <h3 class="h3f">
+          © Zenkox Projekt 2024
+        </h3>
+        <h3 class="h4f">
+          Készítette: Györfi Zalán
+        </h3>
+      </div>
+
+    </footer>
+  </div>
+
+  <script>
+    var gombBar = document.querySelector('.btnBar');
+    var gombBarIcon = document.querySelector('.btnBar i');
+    var gombBarMedia = document.querySelector('.mediaMenu');
+    gombBar.onclick = function () {
+      gombBarMedia.classList.toggle('open')
+      var nyitva = gombBarMedia.classList.contains('open')
+      gombBarIcon.classList = nyitva
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+
+    // var pathName= window.location.pathname;
+    // var pageName= pathName.split("/").pop();
+
+    // if(pageName==="index.html"){
+    //   document.querySelector(".index2").classList.add("activeLink");
+    // }
+  </script>
+
+</body>
+
+</html>
